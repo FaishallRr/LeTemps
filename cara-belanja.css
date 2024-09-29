@@ -34,18 +34,18 @@ body {
   -o-transform: translateX(-70px);
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 770px) {
   .footer-border {
     width: 100%;
     margin-top: 80px;
   }
   .nav-back {
     margin-top: 10px;
-    transform: translateX(110px);
-    -webkit-transform: translateX(110px);
-    -moz-transform: translateX(110px);
-    -ms-transform: translateX(110px);
-    -o-transform: translateX(110px);
+    transform: translateX(290px);
+    -webkit-transform: translateX(290px);
+    -moz-transform: translateX(290px);
+    -ms-transform: translateX(290px);
+    -o-transform: translateX(290px);
   }
   .button-contact {
     display: none;
@@ -67,5 +67,101 @@ body {
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 720px) {
+  .footer-border {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .nav-back {
+    margin-top: 10px;
+    transform: translateX(250px);
+    -webkit-transform: translateX(250px);
+    -moz-transform: translateX(250px);
+    -ms-transform: translateX(250px);
+    -o-transform: translateX(250px);
+  }
+  .button-contact {
+    display: none;
+  }
+  .bantuan {
+    margin-top: 60px;
+  }
+  .pertanyaan {
+    font-size: 20px;
+  }
+  .logo-footer {
+    margin-left: 35px;
+  }
+  .footer-title {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .footer-border {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .nav-back {
+    margin-top: 10px;
+    transform: translateX(200px);
+    -webkit-transform: translateX(200px);
+    -moz-transform: translateX(200px);
+    -ms-transform: translateX(200px);
+    -o-transform: translateX(200px);
+  }
+  .button-contact {
+    display: none;
+  }
+  .bantuan {
+    margin-top: 60px;
+  }
+  .pertanyaan {
+    font-size: 20px;
+  }
+  .logo-footer {
+    margin-left: 35px;
+  }
+  .footer-title {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer-border {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .nav-back {
+    margin-top: 10px;
+    transform: translateX(95px);
+    -webkit-transform: translateX(95px);
+    -moz-transform: translateX(95px);
+    -ms-transform: translateX(95px);
+    -o-transform: translateX(95px);
+  }
+  .button-contact {
+    display: none;
+  }
+  .bantuan {
+    margin-top: 60px;
+  }
+  .pertanyaan {
+    font-size: 20px;
+  }
+  .logo-footer {
+    margin-left: 35px;
+  }
+  .footer-title {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+  }
 }
