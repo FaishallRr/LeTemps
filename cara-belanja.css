@@ -34,6 +34,14 @@ body {
   -o-transform: translateX(-70px);
 }
 
+.footer-akhir {
+  transform: translateX(100px) translatey(-100px);
+  -webkit-transform: translateX(100px) translatey(-100px);
+  -moz-transform: translateX(100px) translatey(-100px);
+  -ms-transform: translateX(100px) translatey(-100px);
+  -o-transform: translateX(100px) translatey(-100px);
+}
+
 @media only screen and (max-width: 770px) {
   .footer-border {
     width: 100%;
@@ -64,6 +72,13 @@ body {
     display: flex;
     justify-content: center;
     margin-left: 40px;
+  }
+  .footer-akhir {
+    transform: translateX(40px);
+    -webkit-transform: translateX(40px);
+    -moz-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    -o-transform: translateX(40px);
   }
 }
 
@@ -98,6 +113,13 @@ body {
     justify-content: center;
     margin-left: 40px;
   }
+  .footer-akhir {
+    transform: translateX(40px);
+    -webkit-transform: translateX(40px);
+    -moz-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    -o-transform: translateX(40px);
+  }
 }
 
 @media only screen and (max-width: 620px) {
@@ -131,6 +153,13 @@ body {
     justify-content: center;
     margin-left: 40px;
   }
+  .footer-akhir {
+    transform: translateX(40px);
+    -webkit-transform: translateX(40px);
+    -moz-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    -o-transform: translateX(40px);
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -156,12 +185,19 @@ body {
     font-size: 20px;
   }
   .logo-footer {
-    margin-left: 35px;
+    margin-left: 45px;
   }
   .footer-title {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    margin-left: 40px;
+    margin-left: 15px;
+  }
+  .footer-akhir {
+    transform: translateX(40px);
+    -webkit-transform: translateX(40px);
+    -moz-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    -o-transform: translateX(40px);
   }
 }
