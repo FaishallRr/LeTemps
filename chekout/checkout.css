@@ -1498,11 +1498,11 @@ h2 {
     width: 380px;
     height: 1450px;
     display: block;
-    transform: translateX(-130px);
-    -webkit-transform: translateX(-130px);
-    -moz-transform: translateX(-130px);
-    -ms-transform: translateX(-130px);
-    -o-transform: translateX(-130px);
+    transform: translateX(-163px);
+    -webkit-transform: translateX(-163px);
+    -moz-transform: translateX(-163px);
+    -ms-transform: translateX(-163px);
+    -o-transform: translateX(-163px);
     flex-wrap: wrap;
   }
 
@@ -1621,11 +1621,11 @@ h2 {
     width: 380px;
     height: 600px;
     display: block;
-    transform: translateX(-130px);
-    -webkit-transform: translateX(-130px);
-    -moz-transform: translateX(-130px);
-    -ms-transform: translateX(-130px);
-    -o-transform: translateX(-130px);
+    transform: translateX(-163px);
+    -webkit-transform: translateX(-163px);
+    -moz-transform: translateX(-163px);
+    -ms-transform: translateX(-163px);
+    -o-transform: translateX(-163px);
     flex-wrap: wrap;
   }
 
@@ -1656,7 +1656,7 @@ h2 {
 @media only screen and (max-width: 390px) {
   .container-produk {
     flex-wrap: wrap;
-    width: 360px;
+    width: 36z0px;
     height: 1450px;
     display: block;
     transform: translateX(-130px);
