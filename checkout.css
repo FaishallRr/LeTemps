@@ -1621,11 +1621,11 @@ h2 {
     width: 370px;
     height: 610px;
     display: block;
-    transform: translateX(-148px);
-    -webkit-transform: translateX(-148px);
-    -moz-transform: translateX(-148px);
-    -ms-transform: translateX(-148px);
-    -o-transform: translateX(-148px);
+    transform: translateX(-151px);
+    -webkit-transform: translateX(-151px);
+    -moz-transform: translateX(-151px);
+    -ms-transform: translateX(-151px);
+    -o-transform: translateX(-151px);
     flex-wrap: wrap;
   }
 
