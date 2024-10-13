@@ -1496,7 +1496,7 @@ h2 {
 @media only screen and (max-width: 415px) {
   .container-produk {
     width: 340px;
-    height: 1450px;
+    height: 1350px;
     display: block;
     transform: translateX(-125px);
     -webkit-transform: translateX(-125px);
@@ -1610,22 +1610,22 @@ h2 {
   .checkout-btn {
     width: 280px;
     font-size: 18px;
-    transform: translateX(-285px);
-    -webkit-transform: translateX(-285px);
-    -moz-transform: translateX(-285px);
-    -ms-transform: translateX(-285px);
-    -o-transform: translateX(-285px);
+    transform: translateX(-275px);
+    -webkit-transform: translateX(-275px);
+    -moz-transform: translateX(-275px);
+    -ms-transform: translateX(-275px);
+    -o-transform: translateX(-275px);
   }
 
   .container-produk-1 {
     width: 370px;
     height: 610px;
     display: block;
-    transform: translateX(-125px);
-    -webkit-transform: translateX(-125px);
-    -moz-transform: translateX(-125px);
-    -ms-transform: translateX(-125px);
-    -o-transform: translateX(-125px);
+    transform: translateX(-135px);
+    -webkit-transform: translateX(-135px);
+    -moz-transform: translateX(-135px);
+    -ms-transform: translateX(-135px);
+    -o-transform: translateX(-135px);
     flex-wrap: wrap;
   }
 
