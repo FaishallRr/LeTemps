@@ -1496,13 +1496,13 @@ h2 {
 @media only screen and (max-width: 415px) {
   .container-produk {
     width: 340px;
-    height: 1420px;
+    height: 1480px;
     display: block;
-    transform: translateX(-125px);
-    -webkit-transform: translateX(-125px);
-    -moz-transform: translateX(-125px);
-    -ms-transform: translateX(-125px);
-    -o-transform: translateX(-125px);
+    transform: translateX(-135px);
+    -webkit-transform: translateX(-135px);
+    -moz-transform: translateX(-135px);
+    -ms-transform: translateX(-135px);
+    -o-transform: translateX(-135px);
     flex-wrap: wrap;
   }
 
@@ -1621,11 +1621,11 @@ h2 {
     width: 370px;
     height: 610px;
     display: block;
-    transform: translateX(-165px);
-    -webkit-transform: translateX(-165px);
-    -moz-transform: translateX(-165px);
-    -ms-transform: translateX(-165px);
-    -o-transform: translateX(-165px);
+    transform: translateX(-175px);
+    -webkit-transform: translateX(-175px);
+    -moz-transform: translateX(-175px);
+    -ms-transform: translateX(-175px);
+    -o-transform: translateX(-175px);
     flex-wrap: wrap;
   }
 
