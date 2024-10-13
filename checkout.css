@@ -1495,20 +1495,20 @@ h2 {
 
 @media only screen and (max-width: 415px) {
   .container-produk {
-    width: 380px;
+    width: 360px;
     height: 1450px;
     display: block;
-    transform: translateX(-180px);
-    -webkit-transform: translateX(-180px);
-    -moz-transform: translateX(-180px);
-    -ms-transform: translateX(-180px);
-    -o-transform: translateX(-180px);
+    transform: translateX(-155px);
+    -webkit-transform: translateX(-155px);
+    -moz-transform: translateX(-155px);
+    -ms-transform: translateX(-155px);
+    -o-transform: translateX(-155px);
     flex-wrap: wrap;
   }
 
   .img-produk {
     width: 300px;
-    margin-left: 10px;
+    margin-left: 5px;
   }
 
   .text-produk-judul .bold {
@@ -1618,14 +1618,14 @@ h2 {
   }
 
   .container-produk-1 {
-    width: 380px;
-    height: 600px;
+    width: 370px;
+    height: 610px;
     display: block;
-    transform: translateX(-180px);
-    -webkit-transform: translateX(-180px);
-    -moz-transform: translateX(-180px);
-    -ms-transform: translateX(-180px);
-    -o-transform: translateX(-180px);
+    transform: translateX(-160px);
+    -webkit-transform: translateX(-160px);
+    -moz-transform: translateX(-160px);
+    -ms-transform: translateX(-160px);
+    -o-transform: translateX(-160px);
     flex-wrap: wrap;
   }
 
@@ -1656,7 +1656,7 @@ h2 {
 @media only screen and (max-width: 390px) {
   .container-produk {
     flex-wrap: wrap;
-    width: 36z0px;
+    width: 360px;
     height: 1450px;
     display: block;
     transform: translateX(-130px);
