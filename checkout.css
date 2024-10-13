@@ -1496,7 +1496,7 @@ h2 {
 @media only screen and (max-width: 415px) {
   .container-produk {
     width: 340px;
-    height: 1520px;
+    height: 1500px;
     display: block;
     transform: translateX(-155px);
     -webkit-transform: translateX(-155px);
@@ -1621,11 +1621,11 @@ h2 {
     width: 370px;
     height: 610px;
     display: block;
-    transform: translateX(-168px);
-    -webkit-transform: translateX(-168px);
-    -moz-transform: translateX(-168px);
-    -ms-transform: translateX(-168px);
-    -o-transform: translateX(-168px);
+    transform: translateX(-148px);
+    -webkit-transform: translateX(-148px);
+    -moz-transform: translateX(-148px);
+    -ms-transform: translateX(-148px);
+    -o-transform: translateX(-148px);
     flex-wrap: wrap;
   }
 
