@@ -1498,11 +1498,11 @@ h2 {
     width: 380px;
     height: 1450px;
     display: block;
-    transform: translateX(-163px);
-    -webkit-transform: translateX(-163px);
-    -moz-transform: translateX(-163px);
-    -ms-transform: translateX(-163px);
-    -o-transform: translateX(-163px);
+    transform: translateX(-180px);
+    -webkit-transform: translateX(-180px);
+    -moz-transform: translateX(-180px);
+    -ms-transform: translateX(-180px);
+    -o-transform: translateX(-180px);
     flex-wrap: wrap;
   }
 
@@ -1621,11 +1621,11 @@ h2 {
     width: 380px;
     height: 600px;
     display: block;
-    transform: translateX(-163px);
-    -webkit-transform: translateX(-163px);
-    -moz-transform: translateX(-163px);
-    -ms-transform: translateX(-163px);
-    -o-transform: translateX(-163px);
+    transform: translateX(-180px);
+    -webkit-transform: translateX(-180px);
+    -moz-transform: translateX(-180px);
+    -ms-transform: translateX(-180px);
+    -o-transform: translateX(-180px);
     flex-wrap: wrap;
   }
 
