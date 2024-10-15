@@ -1461,11 +1461,11 @@ h2 {
     width: 370px;
     height: 610px;
     display: block;
-    transform: translateX(-145px);
-    -webkit-transform: translateX(-145px);
-    -moz-transform: translateX(-145px);
-    -ms-transform: translateX(-145px);
-    -o-transform: translateX(-145px);
+    transform: translateX(-148px);
+    -webkit-transform: translateX(-148px);
+    -moz-transform: translateX(-148px);
+    -ms-transform: translateX(-148px);
+    -o-transform: translateX(-148px);
     flex-wrap: wrap;
   }
 
