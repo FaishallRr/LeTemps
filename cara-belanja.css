@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bantuan {
+  margin-top: 60px;
+}
+
+.pertanyaan {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  transform: translateX(20px);
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  -o-transform: translateX(20px);
+}
+
+.button-bantuan {
+  display: none;
+}
+
+.nav-back {
+  margin-top: 10px;
+  transform: translateX(-70px);
+  -webkit-transform: translateX(-70px);
+  -moz-transform: translateX(-70px);
+  -ms-transform: translateX(-70px);
+  -o-transform: translateX(-70px);
+}
+
+.footer-akhir {
+  transform: translateX(100px) translatey(-100px);
+  -webkit-transform: translateX(100px) translatey(-100px);
+  -moz-transform: translateX(100px) translatey(-100px);
+  -ms-transform: translateX(100px) translatey(-100px);
+  -o-transform: translateX(100px) translatey(-100px);
+}
+
+@media only screen and (max-width: 770px) {
+  .footer-border {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .nav-back {
+    margin-top: 10px;
+    transform: translateX(290px);
+    -webkit-transform: translateX(290px);
+    -moz-transform: translateX(290px);
+    -ms-transform: translateX(290px);
+    -o-transform: translateX(290px);
+  }
+  .button-contact {
+    display: none;
+  }
+  .bantuan {
+    margin-top: 60px;
+  }
+  .pertanyaan {
+    font-size: 20px;
+  }
+  .logo-footer {
+    margin-left: 35px;
+  }
+  .footer-title {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+  }
+  .footer-akhir {
+    transform: translateX(40px);
+    -webkit-transform: translateX(40px);
+    -moz-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    -o-transform: translateX(40px);
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .footer-border {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .nav-back {
+    margin-top: 10px;
+    transform: translateX(250px);
+    -webkit-transform: translateX(250px);
+    -moz-transform: translateX(250px);
+    -ms-transform: translateX(250px);
+    -o-transform: translateX(250px);
+  }
+  .button-contact {
+    display: none;
+  }
+  .bantuan {
+    margin-top: 60px;
+  }
+  .pertanyaan {
+    font-size: 20px;
+  }
+  .logo-footer {
+    margin-left: 35px;
+  }
+  .footer-title {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+  }
+  .footer-akhir {
+    transform: translateX(40px);
+    -webkit-transform: translateX(40px);
+    -moz-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    -o-transform: translateX(40px);
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .footer-border {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .nav-back {
+    margin-top: 10px;
+    transform: translateX(200px);
+    -webkit-transform: translateX(200px);
+    -moz-transform: translateX(200px);
+    -ms-transform: translateX(200px);
+    -o-transform: translateX(200px);
+  }
+  .button-contact {
+    display: none;
+  }
+  .bantuan {
+    margin-top: 60px;
+  }
+  .pertanyaan {
+    font-size: 20px;
+  }
+  .logo-footer {
+    margin-left: 35px;
+  }
+  .footer-title {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+  }
+  .footer-akhir {
+    transform: translateX(40px);
+    -webkit-transform: translateX(40px);
+    -moz-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    -o-transform: translateX(40px);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer-border {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .nav-back {
+    margin-top: 10px;
+    transform: translateX(95px);
+    -webkit-transform: translateX(95px);
+    -moz-transform: translateX(95px);
+    -ms-transform: translateX(95px);
+    -o-transform: translateX(95px);
+  }
+  .button-contact {
+    display: none;
+  }
+  .bantuan {
+    margin-top: 60px;
+  }
+  .pertanyaan {
+    font-size: 20px;
+  }
+  .logo-footer {
+    margin-left: 45px;
+  }
+  .footer-title {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+  }
+  .footer-akhir {
+    transform: translateX(40px);
+    -webkit-transform: translateX(40px);
+    -moz-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    -o-transform: translateX(40px);
+  }
+}
