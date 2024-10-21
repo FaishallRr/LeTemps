@@ -42,6 +42,25 @@ body {
   -o-transform: translateX(100px) translatey(-100px);
 }
 
+.contact-description {
+  display: flex;
+  gap: 10px;
+}
+
+.logo-pembayaran {
+  width: 45px;
+  border-radius: 8px 8px 8px 8px;
+  -webkit-border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  -ms-border-radius: 8px 8px 8px 8px;
+  -o-border-radius: 8px 8px 8px 8px;
+  transform: translateX(10px);
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+}
+
 @media only screen and (max-width: 770px) {
   .footer-border {
     width: 100%;

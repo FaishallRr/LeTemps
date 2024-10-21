@@ -155,7 +155,7 @@ img {
   width: 100%;
   overflow: hidden;
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid #ffffff;
 }
 
 .logos {
@@ -170,6 +170,25 @@ img {
   height: auto;
   padding: 10px;
   margin: 0 35px;
+}
+
+.contact-description {
+  display: flex;
+  gap: 10px;
+}
+
+.logo-pembayaran {
+  width: 45px;
+  border-radius: 8px 8px 8px 8px;
+  -webkit-border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  -ms-border-radius: 8px 8px 8px 8px;
+  -o-border-radius: 8px 8px 8px 8px;
+  transform: translateX(10px);
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
 }
 
 /* On smaller screens, decrease text size */

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="../percobaan/style.css" />
+  </head>
+  <body>
+    <div class="gallery-container">
+      <div class="large-image" id="imageContainer">
+        <img id="currentImage" src="../img/produk1.png" alt="Large Image" />
+      </div>
+      <div class="thumbnail-container">
+        <img
+          class="thumbnail"
+          src="../img/produk1.png"
+          alt="Image 1"
+          onclick="changeImage('../img/produk1.png')"
+        />
+        <img
+          class="thumbnail"
+          src="../img/produk-tampakbelakang1.png"
+          alt="Image 2"
+          onclick="changeImage('../img/produk-tampakbelakang1.png')"
+        />
+        <img
+          class="thumbnail"
+          src="../img/produk - size1.png"
+          alt="Image 3"
+          onclick="changeImage('../img/produk - size1.png')"
+        />
+      </div>
+    </div>
+
+    <script>
+      let images = [
+        "../img/produk1.png",
+        "../img/produk-tampakbelakang1.png",
+        "../img/produk - size1.pngg",
+      ];
+      let currentIndex = 0;
+
+      function changeImage(src) {
+        document.getElementById("currentImage").src = src;
+        currentIndex = images.indexOf(src);
+      }
+
+      // Swipe gesture variables
+      let startX = 0;
+      let endX = 0;
+
+      const imageContainer = document.getElementById("imageContainer");
+
+      // Detect touch start
+      imageContainer.addEventListener("touchstart", (e) => {
+        startX = e.touches[0].clientX;
+      });
+
+      // Detect touch end and determine swipe direction
+      imageContainer.addEventListener("touchend", (e) => {
+        endX = e.changedTouches[0].clientX;
+        handleSwipe();
+      });
+
+      function handleSwipe() {
+        if (startX > endX + 50) {
+          // Swipe left
+          currentIndex =
+            currentIndex === images.length - 1 ? 0 : currentIndex + 1;
+          document.getElementById("currentImage").src = images[currentIndex];
+        } else if (startX < endX - 50) {
+          // Swipe right
+          currentIndex =
+            currentIndex === 0 ? images.length - 1 : currentIndex - 1;
+          document.getElementById("currentImage").src = images[currentIndex];
+        }
+      }
+    </script>
+  </body>
+</html>
