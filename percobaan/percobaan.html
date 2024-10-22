@@ -3,77 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image Gallery</title>
-    <link rel="stylesheet" href="../percobaan/style.css" />
+    <title>Order Produk</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="gallery-container">
-      <div class="large-image" id="imageContainer">
-        <img id="currentImage" src="../img/produk1.png" alt="Large Image" />
+    <div class="container">
+      <h1>Order Produk</h1>
+
+      <div class="product">
+        <div class="quantity">
+          <button
+            class="btn-jml minus"
+            onclick="updateQuantity('product1', -1)"
+          >
+            -
+          </button>
+          <input type="text" id="product1" value="0" readonly />
+          <button class="btn-jml plus" onclick="updateQuantity('product1', 1)">
+            +
+          </button>
+        </div>
       </div>
-      <div class="thumbnail-container">
-        <img
-          class="thumbnail"
-          src="../img/produk1.png"
-          alt="Image 1"
-          onclick="changeImage('../img/produk1.png')"
-        />
-        <img
-          class="thumbnail"
-          src="../img/produk-tampakbelakang1.png"
-          alt="Image 2"
-          onclick="changeImage('../img/produk-tampakbelakang1.png')"
-        />
-        <img
-          class="thumbnail"
-          src="../img/produk - size1.png"
-          alt="Image 3"
-          onclick="changeImage('../img/produk - size1.png')"
-        />
-      </div>
+
+      <button id="orderBtn" onclick="submitOrder()">Order via WhatsApp</button>
     </div>
 
     <script>
-      let images = [
-        "../img/produk1.png",
-        "../img/produk-tampakbelakang1.png",
-        "../img/produk - size1.pngg",
-      ];
-      let currentIndex = 0;
+      function updateQuantity(productId, amount) {
+        const input = document.getElementById(productId);
+        let currentValue = parseInt(input.value);
 
-      function changeImage(src) {
-        document.getElementById("currentImage").src = src;
-        currentIndex = images.indexOf(src);
+        currentValue += amount;
+        if (currentValue < 0) {
+          currentValue = 0;
+        }
+
+        input.value = currentValue;
       }
 
-      // Swipe gesture variables
-      let startX = 0;
-      let endX = 0;
+      function submitOrder() {
+        const product1 = document.getElementById("product1").value;
 
-      const imageContainer = document.getElementById("imageContainer");
+        let message = "";
 
-      // Detect touch start
-      imageContainer.addEventListener("touchstart", (e) => {
-        startX = e.touches[0].clientX;
-      });
+        if (product1 > 0) {
+          message += `- Produk 1 sebanyak ${product1}\n`;
+        }
 
-      // Detect touch end and determine swipe direction
-      imageContainer.addEventListener("touchend", (e) => {
-        endX = e.changedTouches[0].clientX;
-        handleSwipe();
-      });
-
-      function handleSwipe() {
-        if (startX > endX + 50) {
-          // Swipe left
-          currentIndex =
-            currentIndex === images.length - 1 ? 0 : currentIndex + 1;
-          document.getElementById("currentImage").src = images[currentIndex];
-        } else if (startX < endX - 50) {
-          // Swipe right
-          currentIndex =
-            currentIndex === 0 ? images.length - 1 : currentIndex - 1;
-          document.getElementById("currentImage").src = images[currentIndex];
+        if (product1 > 0) {
+          const whatsappUrl = `https://api.whatsapp.com/send?phone=62895703047094&text=${encodeURIComponent(
+            message
+          )}`;
+          window.open(whatsappUrl, "_blank");
+        } else {
+          alert("Harap pilih setidaknya satu produk.");
         }
       }
     </script>

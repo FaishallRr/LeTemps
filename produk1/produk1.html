@@ -226,7 +226,21 @@
                   <input type="radio" name="size" value="XL" /> Ukuran XL
                 </label>
               </div>
+              <p id="message" class="message" style="color: red"></p>
             </form>
+
+        <div class="product-jml">
+          <div class="quantity">
+            <button class="btn-jml minus" onclick="updateQuantity('product1', -1)">
+               -
+             </button>
+                <input type="text" id="product1" value="1" readonly />
+             <button class="btn-jml plus" onclick="updateQuantity('product1', 1)">
+               +
+          </button>
+        </div>
+      </div>
+
             <button type="button" class="checkout-btn" onclick="checkout()">
               Checkout via WhatsApp
             </button>
@@ -256,18 +270,35 @@
     </div>
 
     <script>
+    function updateQuantity(productId, amount) {
+    const input = document.getElementById(productId);
+    let currentValue = parseInt(input.value);
+
+    // Pastikan nilai tidak kurang dari 1
+    currentValue += amount;
+    if (currentValue < 1) {
+        currentValue = 1;
+    }
+
+    input.value = currentValue;
+}
+
       function checkout() {
         const size = document.querySelector('input[name="size"]:checked');
-        if (size) {
+        const product1Quantity = document.getElementById('product1').value;
+        var messagePesan = document.getElementById("message");
+
+        if (size && product1Quantity > 0) {
           const sizeValue = size.value;
           const phone = "6285176763058";
-          const message = `Haloo sobat Lé Temps, Saya ingin membeli baju *Humble* dengan ukuran ${sizeValue}.`;
+          const message = `Haloo sobat Lé Temps, Saya ingin membeli baju *Humble sebanyak ${product1Quantity}* dengan ukuran ${sizeValue}.`;
           const url = `https://wa.me/${phone}?text=${encodeURIComponent(
             message
           )}`;
           window.open(url, "_blank");
         } else {
-          alert("Silakan pilih ukuran baju terlebih dahulu.");
+        messagePesan.style.color = "red";
+        messagePesan.textContent = "Silakan pilih ukuran baju terlebih dahulu.";
         }
       }
     </script>
