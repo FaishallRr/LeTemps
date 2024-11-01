@@ -36,7 +36,6 @@ h2 {
 }
 
 .checkout-btn {
-  margin-left: 130px;
   margin-top: 30px;
   display: block;
   width: 400px;
@@ -49,6 +48,11 @@ h2 {
   cursor: pointer;
   text-align: center;
   text-decoration: none;
+  transform: translateX(-140px);
+  -webkit-transform: translateX(-140px);
+  -moz-transform: translateX(-140px);
+  -ms-transform: translateX(-140px);
+  -o-transform: translateX(-140px);
 }
 
 .checkout-btn:hover {
@@ -56,7 +60,7 @@ h2 {
 }
 
 .container-produk {
-  border: solid 2px black;
+  border: solid 2px rgb(255, 255, 255);
   margin-top: 80px;
   width: 80%;
   height: 1050px;
@@ -67,12 +71,33 @@ h2 {
 .img-produk {
   width: 380px;
   margin-top: 50px;
-  border: solid 2px black;
-  transform: translateX(25px) translateY(-30px);
-  -webkit-transform: translateX(25px) translateY(-30px);
-  -moz-transform: translateX(25px) translateY(-30px);
-  -ms-transform: translateX(25px) translateY(-30px);
-  -o-transform: translateX(25px) translateY(-30px);
+  border: solid 2px rgb(255, 255, 255);
+  transform: translateX(30px) translateY(-30px);
+  -webkit-transform: translateX(30px) translateY(-30px);
+  -moz-transform: translateX(30px) translateY(-30px);
+  -ms-transform: translateX(30px) translateY(-30px);
+  -o-transform: translateX(30px) translateY(-30px);
+}
+
+.thumbnail {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.img-produk-thumbnail {
+  width: 80px;
+  transform: translateX(30px);
+  -webkit-transform: translateX(30px);
+  -moz-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  -o-transform: translateX(30px);
+  border: 1px solid rgb(146, 146, 146);
+  padding: 5px;
+}
+
+.img-produk-thumbnail:hover {
+  border: 2px solid black;
 }
 
 .margin-left {
@@ -95,7 +120,7 @@ h2 {
 .text-bagian-description-1 {
   margin-top: 80px;
   font-size: 15px;
-  color: rgb(167, 167, 167);
+  color: rgb(169, 169, 169);
 }
 
 .categori-detail-produk {
@@ -167,10 +192,10 @@ h2 {
 }
 
 .container-produk-1 {
-  border: solid 2px black;
+  border: solid 2px rgb(255, 255, 255);
   margin-top: 30px;
   width: 58%;
-  height: 550px;
+  height: 470px;
   margin-left: 20vh;
   display: flex;
 }
@@ -180,7 +205,8 @@ h2 {
   margin-top: 40px;
   margin-left: 50px;
   font-size: 18px;
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(255, 255, 255);
+  font-weight: 600;
 }
 
 .deskripsi-produk {
@@ -189,199 +215,106 @@ h2 {
   font-size: 16px;
 }
 
-/* Media Query untuk layar ponsel */
-
-@media only screen and (max-width: 1200px) {
-  .container-produk {
-    width: 90%;
-    height: 900px;
-    display: flex;
-    transform: translateX(-130px);
-    -webkit-transform: translateX(-130px);
-    -moz-transform: translateX(-130px);
-    -ms-transform: translateX(-130px);
-    -o-transform: translateX(-130px);
-    flex-wrap: wrap;
-    gap: 110px;
-  }
-
-  .img-produk {
-    width: 300px;
-    margin-left: 15px;
-  }
-
-  .text-produk-judul .bold {
-    font-size: 18px;
-    transform: translateX(-50px) translateY(-50px);
-    -webkit-transform: translateX(-50px) translateY(-50px);
-    -moz-transform: translateX(-50px) translateY(-50px);
-    -ms-transform: translateX(-50px) translateY(-50px);
-    -o-transform: translateX(-50px) translateY(-50px);
-  }
-
-  .text-bagian-description {
-    font-size: 14px;
-    transform: translateX(-50px) translateY(-40px);
-    -webkit-transform: translateX(-50px) translateY(-40px);
-    -moz-transform: translateX(-50px) translateY(-40px);
-    -ms-transform: translateX(-50px) translateY(-40px);
-    -o-transform: translateX(-50px) translateY(-40px);
-  }
-
-  .flex-1 {
-    transform: translateX(-50px) translateY(-35px);
-    -webkit-transform: translateX(-50px) translateY(-35px);
-    -moz-transform: translateX(-50px) translateY(-35px);
-    -ms-transform: translateX(-50px) translateY(-35px);
-    -o-transform: translateX(-50px) translateY(-35px);
-    display: flex;
-  }
-
-  .categori-detail-produk {
-    transform: translateX(-50px) translateY(-70px);
-    -webkit-transform: translateX(-50px) translateY(-70px);
-    -moz-transform: translateX(-50px) translateY(-70px);
-    -ms-transform: translateX(-50px) translateY(-70px);
-    -o-transform: translateX(-50px) translateY(-70px);
-  }
-
-  .categori-detail-produk-1 {
-    transform: translateX(-50px) translateY(-70px);
-    -webkit-transform: translateX(-50px) translateY(-70px);
-    -moz-transform: translateX(-50px) translateY(-70px);
-    -ms-transform: translateX(-50px) translateY(-70px);
-    -o-transform: translateX(-50px) translateY(-70px);
-  }
-  .text-bagian-description-1 {
-    font-size: 12px;
-  }
-
-  .text-bagian-description-2 {
-    font-size: 12px;
-    margin-left: 95px;
-  }
-
-  .text-bagian-description-3 {
-    font-size: 12px;
-    margin-left: 92px;
-  }
-
-  .text-bagian-description-4 {
-    font-size: 12px;
-  }
-
-  .text-bagian-description-5 {
-    font-size: 12px;
-    margin-left: 43px;
-  }
-
-  .text-bagian-description-6 {
-    font-size: 12px;
-    margin-left: 60px;
-  }
-
-  .text-bagian-description-7 {
-    font-size: 12px;
-    margin-left: 50px;
-  }
-
-  .text-bagian-description-8 {
-    font-size: 12px;
-  }
-
-  .text-bagian-description-9 {
-    font-size: 12px;
-  }
-
-  .text-bagian-description-10 {
-    font-size: 12px;
-  }
-
-  .text-bagian-size {
-    font-size: 16px;
-  }
-
-  .container-chekout {
-    font-size: 17px;
-    width: 200px;
-  }
-
-  .checkout-btn {
-    width: 280px;
-    font-size: 18px;
-    transform: translateX(-275px);
-    -webkit-transform: translateX(-275px);
-    -moz-transform: translateX(-275px);
-    -ms-transform: translateX(-275px);
-    -o-transform: translateX(-275px);
-  }
-
-  .container-produk-1 {
-    width: 600px;
-    height: 600px;
-    display: block;
-    transform: translateX(20px);
-    -webkit-transform: translateX(20px);
-    -moz-transform: translateX(20px);
-    -ms-transform: translateX(20px);
-    -o-transform: translateX(20px);
-    flex-wrap: wrap;
-  }
-
-  .deskripsi-produk-judul {
-    width: 320px;
-    margin-top: 60px;
-    margin-left: 80px;
-    font-size: 16px;
-  }
-
-  .deskripsi-produk {
-    width: 80%;
-    text-align: justify;
-    margin-left: 80px;
-    font-size: 13px;
-  }
-
-  .footer-border {
-    width: 100%;
-    margin-top: 80px;
-  }
-  .nav-back {
-    margin-top: 10px;
-    transform: translateX(290px);
-    -webkit-transform: translateX(290px);
-    -moz-transform: translateX(290px);
-    -ms-transform: translateX(290px);
-    -o-transform: translateX(290px);
-  }
-  .button-contact {
-    display: none;
-  }
-  .bantuan {
-    margin-top: 60px;
-  }
-  .pertanyaan {
-    font-size: 20px;
-  }
-  .logo-footer {
-    margin-left: 35px;
-  }
-  .footer-title {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    margin-left: 40px;
-  }
-  .footer-akhir {
-    transform: translateX(40px);
-    -webkit-transform: translateX(40px);
-    -moz-transform: translateX(40px);
-    -ms-transform: translateX(40px);
-    -o-transform: translateX(40px);
-  }
+.deskripsi-produk-mobile {
+  transform: translateX(60px);
+  -webkit-transform: translateX(60px);
+  -moz-transform: translateX(60px);
+  -ms-transform: translateX(60px);
+  -o-transform: translateX(60px);
 }
 
-@media only screen and (max-width: 970px) {
+.deskripsi-produk-mobile-1 {
+  transform: translateX(60px) translateY(-30px);
+  -webkit-transform: translateX(60px) translateY(-30px);
+  -moz-transform: translateX(60px) translateY(-30px);
+  -ms-transform: translateX(60px) translateY(-30px);
+  -o-transform: translateX(60px) translateY(-30px);
+}
+
+.contact-description {
+  display: flex;
+  gap: 10px;
+}
+
+.logo-pembayaran {
+  width: 45px;
+  border-radius: 8px 8px 8px 8px;
+  -webkit-border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  -ms-border-radius: 8px 8px 8px 8px;
+  -o-border-radius: 8px 8px 8px 8px;
+  transform: translateX(10px);
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+}
+
+.footer-akhir {
+  transform: translateX(150px) translateY(-100px);
+  -webkit-transform: translateX(150px) translateY(-100px);
+  -moz-transform: translateX(150px) translateY(-100px);
+  -ms-transform: translateX(150px) translateY(-100px);
+  -o-transform: translateX(150px) translateY(-100px);
+}
+
+.product-jml {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn-jml {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #ddd;
+  margin: 0 5px;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -ms-border-radius: 10px 10px 10px 10px;
+  -o-border-radius: 10px 10px 10px 10px;
+}
+
+.btn-jml:hover {
+  background-color: #ccc;
+}
+
+input[type="text"] {
+  width: 50px;
+  text-align: center;
+  font-size: 18px;
+  border: none;
+  background-color: white;
+}
+
+.message {
+  font-size: 16px;
+}
+
+.produk-1 {
+  width: 200px;
+  height: auto;
+  transform: translateX(80px);
+  -webkit-transform: translateX(80px);
+  -moz-transform: translateX(80px);
+  -ms-transform: translateX(80px);
+  -o-transform: translateX(80px);
+}
+
+/* Media Query untuk layar ponsel */
+
+@media only screen and (max-width: 1000px) {
   .container-produk {
     width: 410px;
     height: 1450px;
@@ -397,6 +330,23 @@ h2 {
   .img-produk {
     width: 300px;
     margin-left: 30px;
+    border: #ffffff;
+  }
+
+  .thumbnail {
+    display: flex;
+    gap: 13px;
+  }
+
+  .img-produk-thumbnail {
+    width: 60px;
+    transform: translateX(30px) translateY(-40px);
+    -webkit-transform: translateX(30px) translateY(-40px);
+    -moz-transform: translateX(30px) translateY(-40px);
+    -ms-transform: translateX(30px) translateY(-40px);
+    -o-transform: translateX(30px) translateY(-40px);
+    border: 1px solid rgb(146, 146, 146);
+    padding: 5px;
   }
 
   .text-produk-judul .bold {
@@ -597,6 +547,22 @@ h2 {
     margin-left: 30px;
   }
 
+  .thumbnail {
+    display: flex;
+    gap: 13px;
+  }
+
+  .img-produk-thumbnail {
+    width: 60px;
+    transform: translateX(30px) translateY(-40px);
+    -webkit-transform: translateX(30px) translateY(-40px);
+    -moz-transform: translateX(30px) translateY(-40px);
+    -ms-transform: translateX(30px) translateY(-40px);
+    -o-transform: translateX(30px) translateY(-40px);
+    border: 1px solid rgb(146, 146, 146);
+    padding: 5px;
+  }
+
   .text-produk-judul .bold {
     font-size: 18px;
     transform: translateX(-50px) translateY(-50px);
@@ -793,6 +759,22 @@ h2 {
   .img-produk {
     width: 300px;
     margin-left: 30px;
+  }
+
+  .thumbnail {
+    display: flex;
+    gap: 13px;
+  }
+
+  .img-produk-thumbnail {
+    width: 60px;
+    transform: translateX(30px) translateY(-40px);
+    -webkit-transform: translateX(30px) translateY(-40px);
+    -moz-transform: translateX(30px) translateY(-40px);
+    -ms-transform: translateX(30px) translateY(-40px);
+    -o-transform: translateX(30px) translateY(-40px);
+    border: 1px solid rgb(146, 146, 146);
+    padding: 5px;
   }
 
   .text-produk-judul .bold {
@@ -993,6 +975,27 @@ h2 {
     margin-left: 30px;
   }
 
+  .thumbnail {
+    display: flex;
+    gap: 13px;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+  }
+
+  .img-produk-thumbnail {
+    width: 60px;
+    transform: translateX(30px) translateY(-40px);
+    -webkit-transform: translateX(30px) translateY(-40px);
+    -moz-transform: translateX(30px) translateY(-40px);
+    -ms-transform: translateX(30px) translateY(-40px);
+    -o-transform: translateX(30px) translateY(-40px);
+    border: 1px solid rgb(146, 146, 146);
+    padding: 5px;
+  }
+
   .text-produk-judul .bold {
     font-size: 18px;
     transform: translateX(-50px) translateY(-50px);
@@ -1173,22 +1176,57 @@ h2 {
   }
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 430px) {
   .container-produk {
-    width: 420px;
-    height: 1450px;
+    width: 340px;
+    height: 1400px;
     display: block;
-    transform: translateX(-130px);
-    -webkit-transform: translateX(-130px);
-    -moz-transform: translateX(-130px);
-    -ms-transform: translateX(-130px);
-    -o-transform: translateX(-130px);
+    transform: translateX(-115px);
+    -webkit-transform: translateX(-115px);
+    -moz-transform: translateX(-115px);
+    -ms-transform: translateX(-115px);
+    -o-transform: translateX(-115px);
     flex-wrap: wrap;
+  }
+
+  .container-produk-1 {
+    width: 365px;
+    height: 380px;
+    display: block;
+    transform: translateX(-135px) translateY(50px);
+    -webkit-transform: translateX(-135px) translateY(50px);
+    -moz-transform: translateX(-135px) translateY(50px);
+    -ms-transform: translateX(-135px) translateY(50px);
+    -o-transform: translateX(-135px) translateY(50px);
+    flex-wrap: wrap;
+    margin-top: -50px;
+    margin-bottom: -50px;
   }
 
   .img-produk {
     width: 300px;
-    margin-left: 40px;
+    margin-left: -6px;
+  }
+
+  .thumbnail {
+    display: flex;
+    gap: 13px;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+  }
+
+  .img-produk-thumbnail {
+    width: 60px;
+    transform: translateX(30px) translateY(-40px);
+    -webkit-transform: translateX(30px) translateY(-40px);
+    -moz-transform: translateX(30px) translateY(-40px);
+    -ms-transform: translateX(30px) translateY(-40px);
+    -o-transform: translateX(30px) translateY(-40px);
+    border: 1px solid rgb(146, 146, 146);
+    padding: 5px;
   }
 
   .text-produk-judul .bold {
@@ -1290,37 +1328,39 @@ h2 {
   .checkout-btn {
     width: 280px;
     font-size: 18px;
-    transform: translateX(-250px);
-    -webkit-transform: translateX(-250px);
-    -moz-transform: translateX(-250px);
-    -ms-transform: translateX(-250px);
-    -o-transform: translateX(-250px);
-  }
-
-  .container-produk-1 {
-    width: 420px;
-    height: 600px;
-    display: block;
-    transform: translateX(-130px);
-    -webkit-transform: translateX(-130px);
-    -moz-transform: translateX(-130px);
-    -ms-transform: translateX(-130px);
-    -o-transform: translateX(-130px);
-    flex-wrap: wrap;
+    transform: translateX(-160px);
+    -webkit-transform: translateX(-160px);
+    -moz-transform: translateX(-160px);
+    -ms-transform: translateX(-160px);
+    -o-transform: translateX(-160px);
   }
 
   .deskripsi-produk-judul {
-    width: 320px;
+    width: 300px;
     margin-top: 60px;
     margin-left: 80px;
     font-size: 16px;
   }
 
   .deskripsi-produk {
-    width: 80%;
+    width: 85%;
     text-align: justify;
     margin-left: 80px;
     font-size: 13px;
+  }
+
+  .deskripsi-produk-mobile {
+    width: 200px;
+    transform: translateX(90px);
+  }
+
+  .deskripsi-produk-mobile-1 {
+    width: 300px;
+    transform: translateX(90px) translateY(-20px);
+    -webkit-transform: translateX(90px) translateY(-20px);
+    -moz-transform: translateX(90px) translateY(-20px);
+    -ms-transform: translateX(90px) translateY(-20px);
+    -o-transform: translateX(90px) translateY(-20px);
   }
 
   .nav-back {
@@ -1331,12 +1371,44 @@ h2 {
     -ms-transform: translateX(95px);
     -o-transform: translateX(95px);
   }
+
+  .produk-1 {
+    margin-top: -80px;
+    margin-bottom: 20px;
+  }
+
+  .quantity {
+    margin-top: 20px;
+    transform: translateX(-85px);
+    -webkit-transform: translateX(-85px);
+    -moz-transform: translateX(-85px);
+    -ms-transform: translateX(-85px);
+    -o-transform: translateX(-85px);
+  }
+
+  .message {
+    width: 250px;
+    font-size: 12px;
+    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+  }
+
+  .logo-le {
+    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+  }
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 415px) {
   .container-produk {
     width: 340px;
-    height: 1480px;
+    height: 1400px;
     display: block;
     transform: translateX(-135px);
     -webkit-transform: translateX(-135px);
@@ -1346,9 +1418,39 @@ h2 {
     flex-wrap: wrap;
   }
 
+  .container-produk-1 {
+    width: 365px;
+    height: 380px;
+    display: block;
+    transform: translateX(-135px) translateY(50px);
+    -webkit-transform: translateX(-135px) translateY(50px);
+    -moz-transform: translateX(-135px) translateY(50px);
+    -ms-transform: translateX(-135px) translateY(50px);
+    -o-transform: translateX(-135px) translateY(50px);
+    flex-wrap: wrap;
+    margin-top: -50px;
+    margin-bottom: -50px;
+  }
+
   .img-produk {
     width: 300px;
     margin-left: -6px;
+  }
+
+  .thumbnail {
+    display: flex;
+    gap: 13px;
+  }
+
+  .img-produk-thumbnail {
+    width: 60px;
+    transform: translateX(30px) translateY(-40px);
+    -webkit-transform: translateX(30px) translateY(-40px);
+    -moz-transform: translateX(30px) translateY(-40px);
+    -ms-transform: translateX(30px) translateY(-40px);
+    -o-transform: translateX(30px) translateY(-40px);
+    border: 1px solid rgb(146, 146, 146);
+    padding: 5px;
   }
 
   .text-produk-judul .bold {
@@ -1450,37 +1552,39 @@ h2 {
   .checkout-btn {
     width: 280px;
     font-size: 18px;
-    transform: translateX(-275px);
-    -webkit-transform: translateX(-275px);
-    -moz-transform: translateX(-275px);
-    -ms-transform: translateX(-275px);
-    -o-transform: translateX(-275px);
-  }
-
-  .container-produk-1 {
-    width: 370px;
-    height: 610px;
-    display: block;
-    transform: translateX(-148px);
-    -webkit-transform: translateX(-148px);
-    -moz-transform: translateX(-148px);
-    -ms-transform: translateX(-148px);
-    -o-transform: translateX(-148px);
-    flex-wrap: wrap;
+    transform: translateX(-150px);
+    -webkit-transform: translateX(-150px);
+    -moz-transform: translateX(-150px);
+    -ms-transform: translateX(-150px);
+    -o-transform: translateX(-150px);
   }
 
   .deskripsi-produk-judul {
-    width: 320px;
+    width: 300px;
     margin-top: 60px;
     margin-left: 80px;
     font-size: 16px;
   }
 
   .deskripsi-produk {
-    width: 80%;
+    width: 85%;
     text-align: justify;
     margin-left: 80px;
     font-size: 13px;
+  }
+
+  .deskripsi-produk-mobile {
+    width: 200px;
+    transform: translateX(90px);
+  }
+
+  .deskripsi-produk-mobile-1 {
+    width: 300px;
+    transform: translateX(90px) translateY(-20px);
+    -webkit-transform: translateX(90px) translateY(-20px);
+    -moz-transform: translateX(90px) translateY(-20px);
+    -ms-transform: translateX(90px) translateY(-20px);
+    -o-transform: translateX(90px) translateY(-20px);
   }
 
   .nav-back {
@@ -1490,5 +1594,250 @@ h2 {
     -moz-transform: translateX(95px);
     -ms-transform: translateX(95px);
     -o-transform: translateX(95px);
+  }
+
+  .produk-1 {
+    margin-top: -80px;
+    margin-bottom: 20px;
+  }
+
+  .quantity {
+    margin-top: 20px;
+    transform: translateX(-75px);
+    -webkit-transform: translateX(-75px);
+    -moz-transform: translateX(-75px);
+    -ms-transform: translateX(-75px);
+    -o-transform: translateX(-75px);
+  }
+
+  .message {
+    width: 250px;
+    font-size: 12px;
+    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .container-produk {
+    width: 340px;
+    height: 1400px;
+    display: block;
+    transform: translateX(-135px);
+    -webkit-transform: translateX(-135px);
+    -moz-transform: translateX(-135px);
+    -ms-transform: translateX(-135px);
+    -o-transform: translateX(-135px);
+    flex-wrap: wrap;
+  }
+
+  .container-produk-1 {
+    width: 365px;
+    height: 380px;
+    display: block;
+    transform: translateX(-135px) translateY(50px);
+    -webkit-transform: translateX(-135px) translateY(50px);
+    -moz-transform: translateX(-135px) translateY(50px);
+    -ms-transform: translateX(-135px) translateY(50px);
+    -o-transform: translateX(-135px) translateY(50px);
+    flex-wrap: wrap;
+    margin-top: -50px;
+    margin-bottom: -50px;
+  }
+
+  .img-produk {
+    width: 300px;
+    margin-left: -6px;
+  }
+
+  .thumbnail {
+    display: flex;
+    gap: 13px;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+  }
+
+  .img-produk-thumbnail {
+    width: 60px;
+    transform: translateX(30px) translateY(-40px);
+    -webkit-transform: translateX(30px) translateY(-40px);
+    -moz-transform: translateX(30px) translateY(-40px);
+    -ms-transform: translateX(30px) translateY(-40px);
+    -o-transform: translateX(30px) translateY(-40px);
+    border: 1px solid rgb(146, 146, 146);
+    padding: 5px;
+  }
+
+  .text-produk-judul .bold {
+    font-size: 18px;
+    transform: translateX(-50px) translateY(-50px);
+    -webkit-transform: translateX(-50px) translateY(-50px);
+    -moz-transform: translateX(-50px) translateY(-50px);
+    -ms-transform: translateX(-50px) translateY(-50px);
+    -o-transform: translateX(-50px) translateY(-50px);
+  }
+
+  .text-bagian-description {
+    font-size: 14px;
+    transform: translateX(-50px) translateY(-40px);
+    -webkit-transform: translateX(-50px) translateY(-40px);
+    -moz-transform: translateX(-50px) translateY(-40px);
+    -ms-transform: translateX(-50px) translateY(-40px);
+    -o-transform: translateX(-50px) translateY(-40px);
+  }
+
+  .flex-1 {
+    transform: translateX(-50px) translateY(-35px);
+    -webkit-transform: translateX(-50px) translateY(-35px);
+    -moz-transform: translateX(-50px) translateY(-35px);
+    -ms-transform: translateX(-50px) translateY(-35px);
+    -o-transform: translateX(-50px) translateY(-35px);
+    display: flex;
+  }
+
+  .categori-detail-produk {
+    transform: translateX(-50px) translateY(-70px);
+    -webkit-transform: translateX(-50px) translateY(-70px);
+    -moz-transform: translateX(-50px) translateY(-70px);
+    -ms-transform: translateX(-50px) translateY(-70px);
+    -o-transform: translateX(-50px) translateY(-70px);
+  }
+
+  .categori-detail-produk-1 {
+    transform: translateX(-50px) translateY(-70px);
+    -webkit-transform: translateX(-50px) translateY(-70px);
+    -moz-transform: translateX(-50px) translateY(-70px);
+    -ms-transform: translateX(-50px) translateY(-70px);
+    -o-transform: translateX(-50px) translateY(-70px);
+  }
+  .text-bagian-description-1 {
+    font-size: 12px;
+  }
+
+  .text-bagian-description-2 {
+    font-size: 12px;
+    margin-left: 95px;
+  }
+
+  .text-bagian-description-3 {
+    font-size: 12px;
+    margin-left: 92px;
+  }
+
+  .text-bagian-description-4 {
+    font-size: 12px;
+  }
+
+  .text-bagian-description-5 {
+    font-size: 12px;
+    margin-left: 43px;
+  }
+
+  .text-bagian-description-6 {
+    font-size: 12px;
+    margin-left: 60px;
+  }
+
+  .text-bagian-description-7 {
+    font-size: 12px;
+    margin-left: 50px;
+  }
+
+  .text-bagian-description-8 {
+    font-size: 12px;
+  }
+
+  .text-bagian-description-9 {
+    font-size: 12px;
+  }
+
+  .text-bagian-description-10 {
+    font-size: 12px;
+  }
+
+  .text-bagian-size {
+    font-size: 16px;
+  }
+
+  .container-chekout {
+    font-size: 17px;
+    width: 200px;
+  }
+
+  .checkout-btn {
+    width: 280px;
+    font-size: 18px;
+    transform: translateX(-150px);
+    -webkit-transform: translateX(-150px);
+    -moz-transform: translateX(-150px);
+    -ms-transform: translateX(-150px);
+    -o-transform: translateX(-150px);
+  }
+
+  .deskripsi-produk-judul {
+    width: 300px;
+    margin-top: 60px;
+    margin-left: 80px;
+    font-size: 16px;
+  }
+
+  .deskripsi-produk {
+    width: 85%;
+    text-align: justify;
+    margin-left: 80px;
+    font-size: 13px;
+  }
+
+  .deskripsi-produk-mobile {
+    width: 200px;
+    transform: translateX(90px);
+  }
+
+  .deskripsi-produk-mobile-1 {
+    width: 300px;
+    transform: translateX(90px) translateY(-20px);
+    -webkit-transform: translateX(90px) translateY(-20px);
+    -moz-transform: translateX(90px) translateY(-20px);
+    -ms-transform: translateX(90px) translateY(-20px);
+    -o-transform: translateX(90px) translateY(-20px);
+  }
+
+  .nav-back {
+    margin-top: 10px;
+    transform: translateX(95px);
+    -webkit-transform: translateX(95px);
+    -moz-transform: translateX(95px);
+    -ms-transform: translateX(95px);
+    -o-transform: translateX(95px);
+  }
+
+  .produk-1 {
+    margin-top: -80px;
+    margin-bottom: 20px;
+  }
+
+  .quantity {
+    margin-top: 20px;
+    transform: translateX(-75px);
+    -webkit-transform: translateX(-75px);
+    -moz-transform: translateX(-75px);
+    -ms-transform: translateX(-75px);
+    -o-transform: translateX(-75px);
+  }
+
+  .message {
+    width: 250px;
+    font-size: 12px;
+    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
   }
 }

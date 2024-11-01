@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>How To Shop?</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="cara-belanja.css" />
+    <title>Chekout</title>
+    <link rel="stylesheet" href="produk1.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -13,6 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -28,7 +28,7 @@
           class="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between"
         >
           <div>
-            <a href="./index.html">
+            <a href="../index.html">
             <h1
               class="text-xl font-bold text-gray-900 sm:text-3xl"
               style="cursor: pointer"
@@ -52,7 +52,7 @@
 -->
 
           <div class="button-contact flex items-center gap-4 btn-help">
-            <a href="./cara-belanja.html" class="button-bantuan">
+            <a href="../Cara Belanja/cara-belanja.html" class="button-bantuan">
               <button
                 class="inline-flex items-center justify-center gap-1.5 rounded border border-gray-200 bg-white px-5 py-3 text-gray-900 transition hover:text-gray-700 focus:outline-none focus:ring"
                 type="button"
@@ -89,193 +89,219 @@
       </div>
     </header>
 
-    <div class="bantuan space-y-4 px-5">
-      <p class="pertanyaan">Pertanyaan Populer</p>
-      <details class="group [&_summary::-webkit-details-marker]:hidden" open>
-        <summary
-          class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+    <div class="container-produk">
+      <div class="produk-me">
+        <div id="imageContainer">
+        <img id="bigImage" class="produk-1" src="../img/coming soon.png" alt="Large Image" />
+        </div>
+        <div class="thumbnail">
+            <img class="img-produk-thumbnail" src="../img/coming soon.png" alt="thumbnail1"  onclick="changeImage('../img/coming soon.png')">
+            <img class="img-produk-thumbnail" src="../img/coming soon.png" alt="thumbnail2"  onclick="changeImage('../img/coming soon.png')">
+            <img class="img-produk-thumbnail" src="../img/coming soon.png" alt="thumbnail2"  onclick="changeImage('../img/coming soon.png')">
+          </div>
+      </div>
+
+    <script>
+      let images = [
+        "../img/coming soon.png",
+        "../img/coming soon.png",
+        "../img/coming soon.png",
+      ];
+      let currentIndex = 0;
+
+      function changeImage(src) {
+        document.getElementById("bigImage").src = src;
+        currentIndex = images.indexOf(src);
+      }
+
+       // Swipe gesture variables
+      let startX = 0;
+      let endX = 0;
+
+      const imageContainer = document.getElementById("imageContainer");
+
+      // Detect touch start
+      imageContainer.addEventListener("touchstart", (e) => {
+        startX = e.touches[0].clientX;
+      });
+
+      // Detect touch end and determine swipe direction
+      imageContainer.addEventListener("touchend", (e) => {
+        endX = e.changedTouches[0].clientX;
+        handleSwipe();
+      });
+
+      function handleSwipe() {
+        if (startX > endX + 50) {
+          // Swipe left
+          currentIndex =
+            currentIndex === images.length - 1 ? 0 : currentIndex + 1;
+          document.getElementById("bigImage").src = images[currentIndex];
+        } else if (startX < endX - 50) {
+          // Swipe right
+          currentIndex =
+            currentIndex === 0 ? images.length - 1 : currentIndex - 1;
+          document.getElementById("bigImage").src = images[currentIndex];
+        }
+      }
+    </script>
+
+      <div class="margin-left text-produk-judul">
+        <p class="bold">Comming Soon By Lé Temps.</p>
+        <p class="text-bagian-description">0 Terjual</p>
+        <div
+          class="flex-1 flex-wrap items-center gap-1 pt-1 tablet:gap-2"
+          style="margin-top: 30px"
         >
-          <h2 class="font-medium">Apa sih Lé Temps.?</h2>
+          <div data-test-id="specialPriceValue" class="text-xl font-bold">
+            Rp&nbsp;0
+          </div>
+          <div
+          data-test-id="nonSpecialPriceValue"
+          class="text-xl text-grey-60 line-through text-base"
+         >
+          Rp&nbsp;0
+    </div>
+    <div class="text-xl font-bold">-0% OFF</div>
+        </div>
 
-          <svg
-            class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </summary>
+        <div class="categori-detail-produk">
+          <p class="text-bagian-description-1">Bahan</p>
+          <p class="text-bagian-description-2">Cutton Combet</p>
+        </div>
 
-        <p class="mt-4 px-4 leading-relaxed text-gray-700">
-          Lé Temps merupakan platfrom e-commers untuk memudahkan konsumen untuk
-          membeli barang-barang yang ada di Lé Temps secara mudah dan murah.
-        </p>
-      </details>
+        <div class="categori-detail-produk-1">
+          <p class="text-bagian-description-1">Stok</p>
+          <p class="text-bagian-description-9">0</p>
+        </div>
 
-      <details class="group [&_summary::-webkit-details-marker]:hidden">
-        <summary
-          class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
-        >
-          <h2 class="font-medium">
-            Bagaimana cara melakukan pembelian di Lé Temps.?
-          </h2>
+        <div class="categori-detail-produk-1">
+          <p class="text-bagian-description-1">Brands</p>
+          <p class="text-bagian-description-3">Lé Temps.</p>
+        </div>
 
-          <svg
-            class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </summary>
+        <div class="categori-detail-produk-1">
+          <p class="text-bagian-description-1">Gaya</p>
+          <p class="text-bagian-description-4">
+            Basic, Street Style
+          </p>
+        </div>
 
-        <p class="mt-4 px-4 leading-relaxed text-gray-700">
-          Caranya cukup mudah kok! Silahkan pilih baju yang kalian pilih
-          terlebih dahulu kemudian ikuti proses yang sudah diberikan. Jangan
-          lupa untuk mencantumkan bukti pembayaran yang sudah kami sediakan.
-        </p>
-      </details>
+        <div class="categori-detail-produk-1">
+          <p class="text-bagian-description-1">Produk Costum</p>
+          <p class="text-bagian-description-5">Ya</p>
+        </div>
 
-      <details class="group [&_summary::-webkit-details-marker]:hidden">
-        <summary
-          class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
-        >
-          <h2 class="font-medium">Bagaimana pembayaran Lé Temps.?</h2>
+        <div class="categori-detail-produk-1">
+          <p class="text-bagian-description-1">Baju Lengan</p>
+          <p class="text-bagian-description-6">Pendek</p>
+        </div>
 
-          <svg
-            class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </summary>
+        <div class="categori-detail-produk-1">
+          <p class="text-bagian-description-1">Ukuran Jumbo</p>
+          <p class="text-bagian-description-7">Ya</p>
+        </div>
 
-        <p class="mt-4 px-4 leading-relaxed text-gray-700">
-          Lé Temps mendukung pembayaran dengan metode Bank Mandiri dan Dana.
-          silahkan pilih opsi metode pembayaran di halaman pembayaran ketika
-          melakukan pembelian website yah. Dan jangan lupa untuk sertakan bukti
-          pembayaran di halaman yang sudah disediakan yah!
-        </p>
-      </details>
+        <div class="categori-detail-produk-1">
+          <p class="text-bagian-description-1">Dikirim</p>
+          <p class="text-bagian-description-8">Kota Semarang</p>
+        </div>
 
-      <details class="group [&_summary::-webkit-details-marker]:hidden">
-        <summary
-          class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
-        >
-          <h2 class="font-medium">
-            Apa yang terjadi setelah saya melakukan pembayaran?
-          </h2>
+        <div class="categori-detail-produk-1">
+          <p class="text-bagian-size">Size</p>
 
-          <svg
-            class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </summary>
+          <div class="container-chekout">
+            <form id="checkoutForm">
+              <div class="size-options">
+                <label class="size-option">
+                  <input type="radio" name="size" value="M" /> Ukuran M
+                </label>
+                <label class="size-option">
+                  <input type="radio" name="size" value="L" /> Ukuran L
+                </label>
+                <label class="size-option">
+                  <input type="radio" name="size" value="XL" /> Ukuran XL
+                </label>
+              </div>
+              <p id="message" class="message" style="color: red"></p>
+            </form>
 
-        <p class="mt-4 px-4 leading-relaxed text-gray-700">
-          Kami akan mengirimkan bukti resi kepada konsumen dan akan memberitahu
-          bahwa barang pesanan anda sudah dikirim. Barang akan di kirim setelah
-          2x24 jam setelah anda mengirim bukti pembayaran. Jangan ragu untuk
-          bertanya juga ke custumer service kami jika anda mengalami kendala
-          selama proses tersebut.
-        </p>
-      </details>
+        <div class="product-jml">
+          <div class="quantity">
+            <button class="btn-jml minus" onclick="updateQuantity('product1', -1)">
+               -
+             </button>
+                <input  type="text" id="product1" value="1" readonly />
+             <button class="btn-jml plus" onclick="updateQuantity('product1', 1)">
+               +
+          </button>
+        </div>
+      </div>
 
-      <details class="group [&_summary::-webkit-details-marker]:hidden">
-        <summary
-          class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
-        >
-          <h2 class="font-medium">
-            Bisakah membatalkan pembelian baju saya di Lé Temps.?
-          </h2>
-
-          <svg
-            class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </summary>
-
-        <p class="mt-4 px-4 leading-relaxed text-gray-700">
-          Mohon maaf :( Lé Temps tidak menyediakan refund dana karena setiap
-          baju yang dipesan akan otomatis teregister di server kami. Jadi kalian
-          harus memastikan memilih baju yang benar-benar sesuai yah!
-        </p>
-      </details>
-
-      <details class="group [&_summary::-webkit-details-marker]:hidden">
-        <summary
-          class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
-        >
-          <h2 class="font-medium">Bagaimana pembayaran Lé Temps.?</h2>
-
-          <svg
-            class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </summary>
-
-        <p class="mt-4 px-4 leading-relaxed text-gray-700">
-          Lé Temps mendukung pembayaran dengan metode Bank Mandiri dan Dana.
-          silahkan pilih opsi metode pembayaran di halaman pembayaran ketika
-          melakukan pembelian website yah. Dan jangan lupa untuk sertakan bukti
-          pembayaran di halaman yang sudah disediakan yah!
-        </p>
-      </details>
+            <button type="button" class="checkout-btn" onclick="checkout()">
+              Checkout via WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <footer class="footer-border bg-white lg:grid lg:grid-cols-5"
+    <div class="container-produk-1">
+      <div class="text-bagian-description">
+        <p class="deskripsi-produk-judul">Deskripsi Produk</p>
+
+        <p class="deskripsi-produk">
+
+- Kaos Pria dan Wanita <br>
+- Material Cotton combed 100% <br>
+- Ketebalan bahan/ kain 24’s <br>
+- Kesesuaian standar ukuran Lokal <br>
+- Model : O neck – Pola : oversized <br>
+- untuk harian / casual, nyaman digunakan <br>
+- Disablon dengan Teknik DTF <br> <p class="deskripsi-produk-mobile">(Direct Transfer Film)</p> 
+<br><br>
+
+<p class="deskripsi-produk-mobile-1" >Ukuran Baju : <br> M : 55 x 71 CM. <br> L : 57 x 74 CM. <br> XL : 61 x 77 CM.</p>
+        </p>
+      </div>
+    </div>
+
+    <script>
+    function updateQuantity(productId, amount) {
+    const input = document.getElementById(productId);
+    let currentValue = parseInt(input.value);
+
+    // Pastikan nilai tidak kurang dari 1
+    currentValue += amount;
+    if (currentValue < 1) {
+        currentValue = 1;
+    }
+
+    input.value = currentValue;
+}
+
+      function checkout() {
+        const size = document.querySelector('input[name="size"]:checked');
+        const product1Quantity = document.getElementById('product1').value;
+        var messagePesan = document.getElementById("message");
+
+        if (size && product1Quantity > 0) {
+          const sizeValue = size.value;
+          const phone = "6285176763058";
+          const message = `Haloo sobat Lé Temps, Produk Ini Sudah Habis Yaa...`;
+          const url = `https://wa.me/${phone}?text=${encodeURIComponent(
+            message
+          )}`;
+          window.open(url, "_blank");
+        } else {
+        messagePesan.style.color = "red";
+        messagePesan.textContent = "Silakan pilih ukuran baju terlebih dahulu.";
+        }
+      }
+    </script>
+
+
+ <footer class="footer-border bg-white lg:grid lg:grid-cols-5"
     style="border: 2px solid grey; border-radius: 5px 5px 5px 5px; font-size: 14px; margin-top: 110px;">
     <div id="contact" class="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
       <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
@@ -351,7 +377,7 @@
                 </li>
 
                 <li>
-                  <a href="/cara-belanja.html"
+                  <a href="../Cara Belanja/cara-belanja.html"
                     class="text-gray-700 transition hover:opacity-75" style="font-size: 14px;">
                     FAQs</a>
                 </li>
@@ -361,7 +387,7 @@
 
 
             <div class="footer-akhir">
-              <a href="https://wa.me/6285176763058?text=Saya Butuh Bantuan">Metode Pembayaran</a>
+              <a href="#">Metode Pembayaran</a>
 
               <ul class="mt-6 space-y-4 text-sm">
               <div class="contact-description" style="transform: translateX(0px);">

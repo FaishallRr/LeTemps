@@ -1,0 +1,18 @@
+buat diskon
+<p class="bold">Kaos Distro Humble By Lé Temps.</p>
+<p class="text-bagian-description">0 Terjual</p>
+<div
+  class="flex-1 flex-wrap items-center gap-1 pt-1 tablet:gap-2"
+  style="margin-top: 30px"
+>
+  <div data-test-id="specialPriceValue" class="text-xl font-bold">
+    Rp&nbsp;136.000,00
+  </div>
+  <div
+    data-test-id="nonSpecialPriceValue"
+    class="text-xl text-grey-60 line-through text-base"
+  >
+    Rp&nbsp;0
+  </div>
+  <div class="text-xl font-bold">-140.000,00% OFF</div>
+</div>
