@@ -1614,14 +1614,14 @@ input[type="text"] {
   }
 
   .container-produk-1 {
-    width: 365px;
+    width: 345px;
     height: 380px;
     display: block;
-    transform: translateX(-135px) translateY(50px);
-    -webkit-transform: translateX(-135px) translateY(50px);
-    -moz-transform: translateX(-135px) translateY(50px);
-    -ms-transform: translateX(-135px) translateY(50px);
-    -o-transform: translateX(-135px) translateY(50px);
+    transform: translateX(-145px) translateY(50px);
+    -webkit-transform: translateX(-145px) translateY(50px);
+    -moz-transform: translateX(-145px) translateY(50px);
+    -ms-transform: translateX(-145px) translateY(50px);
+    -o-transform: translateX(-145px) translateY(50px);
     flex-wrap: wrap;
     margin-top: -50px;
     margin-bottom: -50px;
@@ -1814,5 +1814,9 @@ input[type="text"] {
     -moz-transform: translateX(-100px);
     -ms-transform: translateX(-100px);
     -o-transform: translateX(-100px);
+  }
+
+  .container-chekout {
+    width: 170px;
   }
 }
