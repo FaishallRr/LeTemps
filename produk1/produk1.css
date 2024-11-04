@@ -1635,6 +1635,7 @@ input[type="text"] {
   .thumbnail {
     display: flex;
     gap: 13px;
+    margin-top: 60px;
   }
 
   .img-produk-thumbnail {
